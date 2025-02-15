@@ -1,0 +1,183 @@
+/* Základní styly */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navigace */
+header {
+    background: #020c24;
+    color: #fff;
+    padding: 15px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .nav-items {
+    list-style: none;
+    display: flex;
+}
+
+header .nav-items li {
+    margin: 0 15px;
+}
+
+header .nav-items li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header .nav-items li a:hover,
+header .nav-items li a.active {
+    color: #7eaee6;
+}
+
+/* Obsah stránky */
+main {
+    padding: 20px 0;
+}
+
+.intro h1 {
+    font-size: 32px;
+    color: #264380;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-right: 400px;
+}
+
+.info h2 {
+    font-size: 24px;
+    color: #264380;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.info ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.info ul li {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.info p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Flexbox pro layout sekcí pro lepší rozložení */
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.img img {
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: auto;
+    width: 100%; 
+    max-width: 300px; 
+    margin-right: 600px;
+    margin-left: 100px;
+    margin-top: -150px;
+}
+
+
+.img1 img {
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: 170px;
+    width: 150%; 
+    max-width: 230px; 
+    float: left;
+    margin-right: 40px;
+    margin-left: 950px;
+    margin-top: -150px;
+}
+
+
+/*spodní patka*/
+footer {
+    background: #020c24;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    margin-top: 30px;
+}
+.CoJeAdhdText {
+  margin-left: 500px;
+  margin-bottom: 10px;
+}
+.CoJeAdhdNadpis {
+    text-align: center;
+}
+.HlavniTypyNadpis {
+    margin-top: 50px;
+}
+.HlavniTypyImage {
+    margin-left: 800px;
+    max-width: 280px;
+    max-height: 250px;
+    margin-top: -200px;
+    border-radius: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+.HlavniTypyText {
+    max-width: 700px;
+}
+.DulezitePorozumetImage {
+    max-width: 300px; 
+    margin-right: 600px;
+    margin-left: 20px;
+    margin-top: -150px;
+    border-radius: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+.DulezitePorozumetNadpis {
+    margin-left: 450px;
+}
+.DulezitePorozumetText {
+    margin-left: 450px;
+}

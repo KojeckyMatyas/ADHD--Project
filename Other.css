@@ -1,0 +1,33 @@
+
+
+/* Patička dolle*/
+footer {
+    background: #00123d;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* Dole spodek Info (Footer) je to jen pod 500 dělalo to bordel  */
+
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #264380;
+        padding: 10px 0;
+    }
+
+}
+
+
+
+
+

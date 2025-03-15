@@ -114,7 +114,7 @@ main {
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     height: auto;
-    width: 100%; 
+    width: 1%%%; 
     max-width: 300px; 
     margin-right: 600px;
     margin-left: 100px;
@@ -122,7 +122,7 @@ main {
 }
 
 
-.img1 img {
+.img1 img{
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     height: 170px;
@@ -145,39 +145,57 @@ footer {
     margin-top: 30px;
 }
 .CoJeAdhdText {
-  margin-left: 500px;
-  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 400px;
+  margin-top: 20px;
 }
 .CoJeAdhdNadpis {
-    text-align: center;
+    margin-right: 0px;
+    margin-left: 0%;
+    margin-top: 200px;
+}
+.CoJeAdhdImage {
+
+
 }
 .HlavniTypyNadpis {
-    margin-top: 50px;
+    margin-top: 100px;
 }
 .HlavniTypyImage {
-    margin-left: 800px;
+    margin-left: 890px;
     max-width: 280px;
     max-height: 250px;
-    margin-top: -200px;
+    margin-top: -160px;
     border-radius: 40px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-bottom: 50px;
 }
 .HlavniTypyText {
     max-width: 700px;
+    margin-top: 20px;
 }
 .DulezitePorozumetImage {
     max-width: 300px; 
-    margin-right: 600px;
-    margin-left: 20px;
+    margin-right: 0px;
+    margin-left: 870px;
     margin-top: -150px;
     border-radius: 40px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-bottom: 25px;
 }
 .DulezitePorozumetNadpis {
-    margin-left: 450px;
+    margin-left: 0px;
+    margin-top: 100px;
 }
 .DulezitePorozumetText {
-    margin-left: 450px;
+    margin-left: 0px;
+    margin-right: 400px;
+    margin-top: 20px;
+}
+.mozek-image {
+    margin-left: 885px;
+    max-width: 300px; 
+    border-radius: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: -120px;
 }

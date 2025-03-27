@@ -20,7 +20,7 @@ body {
 
 /* Navigace */
 header {
-    background: #020c24;
+    background: #00123d;
     color: #fff;
     padding: 15px 0;
 }
@@ -67,7 +67,8 @@ main {
     color: #264380;
     margin-bottom: 15px;
     text-align: center;
-    margin-right: 360px;
+    margin-right: 200px;
+    margin-left: 200px;
 }
 
 .intro p {
@@ -75,7 +76,19 @@ main {
     color: #555;
     text-align: center;
     margin-bottom: 50px;
-    margin-right: 400px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.image5 img{
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: 190px;
+    width: 230px; 
+    max-width: 230px; 
+    float: left;
+    margin-left: 500px;
+    margin-top: -15px;
 }
 
 .info h2 {
@@ -111,29 +124,6 @@ main {
     margin-bottom: 30px;
 }
 
-.img img {
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    height: auto;
-    width: 1%%%; 
-    max-width: 300px; 
-    margin-right: 600px;
-    margin-left: 100px;
-    margin-top: -150px;
-}
-
-
-.img1 img{
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    height: 170px;
-    width: 150%; 
-    max-width: 230px; 
-    float: left;
-    margin-right: 40px;
-    margin-left: 950px;
-    margin-top: -150px;
-}
 
 
 /*spodní patka*/
@@ -153,16 +143,13 @@ footer {
 .CoJeAdhdNadpis {
     margin-right: 0px;
     margin-left: 0%;
-    margin-top: 150px;
+    margin-top: 250px;
 }
-.CoJeAdhdImage {
 
-
-}
 .HlavniTypyNadpis {
     margin-top: 100px;
 }
-.HlavniTypyImage {
+.Image3 {
     margin-left: 890px;
     max-width: 280px;
     max-height: 250px;
@@ -175,7 +162,7 @@ footer {
     max-width: 700px;
     margin-top: 20px;
 }
-.DulezitePorozumetImage {
+.Image6 {
     max-width: 300px; 
     margin-right: 0px;
     margin-left: 870px;
@@ -193,10 +180,39 @@ footer {
     margin-right: 400px;
     margin-top: 25px;
 }
-.mozek-image {
+.Image8 {
     margin-left: 885px;
     max-width: 300px; 
     border-radius: 40px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-top: -120px;
 }
+
+/* Dole spodek Info (Footer) je to jen pod 500 dělalo to bordel  */
+
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #264380;
+        padding: 10px 0;
+    }
+}
+/* Výchozí stav pro celý obsah */
+.fade-in-wrapper {
+    opacity: 0; /* Na začátku je obsah neviditelný */
+    transform: translateY(50px); /* Posuneme obsah dolů */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Definujeme animaci */
+}  
+  
+  /* Třída, která se přidá při scrollování, aby byl obsah viditelný */
+  .fade-in-wrapper.visible {
+    opacity: 10;
+    transform: translateY(10px); /* Obsah se vrátí na původní pozici */
+  }

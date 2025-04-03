@@ -20,16 +20,35 @@ body {
 
 /* Navigace */
 header {
-    background: #00123d;
+    background: linear-gradient(90deg, #00123d, #004080);
+    color: #fff;
+    padding: 15px 0;
+    animation: gradientAnimation 5s infinite alternate;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(90deg, #00123d, #004080);
+    }
+    100% {
+        background: linear-gradient(90deg, #004080, #00123d);
+    }
+}
+
+header {
+    background: linear-gradient(90deg, #00123d, #004080);
     color: #fff;
     padding: 15px 0;
 }
-
 header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 
 header .logo {
     font-size: 24px;
@@ -216,3 +235,4 @@ footer {
     opacity: 10;
     transform: translateY(10px); /* Obsah se vrátí na původní pozici */
   }
+  

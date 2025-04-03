@@ -20,12 +20,21 @@ body {
 
 /* nAVBAR (Navigace) */
 header {
-    background: #00123d;
+    background: linear-gradient(270deg, #00123d, #004080);
+    background-size: 200% 200%;
     color: #fff;
     padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: gradientMove 3s infinite alternate;
 }
 
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
 header nav {
     display: flex;
     justify-content: space-between;
@@ -165,6 +174,13 @@ footer {
   .jak-lze-lecit-text { 
     margin-right: 550px;
   }
+  header {
+    transition: all 0.3s ease-in-out;
+}
+
+header:hover {
+    transform: scale(1.05);
+}
 
 
 

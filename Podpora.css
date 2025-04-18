@@ -1,4 +1,7 @@
 /* Základní styly */
+{ "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
+
+
 * {
     margin: 0;
     padding: 0;

@@ -1,238 +1,187 @@
-/* Základní styly */
+/* Reset default margin, padding, and box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f7fb;
     color: #333;
-    background: #f9f9f9;
-}
-
-.container {
+    line-height: 1.6;
+    margin-top: 0; /* Ensure no margin at the top */
+  }
+  
+  /* Container for center-aligned content */
+  .container {
     width: 90%;
     max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Navigace */
-header {
+    margin: auto;
+  }
+  
+  /* Header styles */
+  header {
     background: linear-gradient(90deg, #00123d, #004080);
     color: #fff;
     padding: 15px 0;
-    animation: gradientAnimation 5s infinite alternate;
+    position: fixed; /* Make the header fixed */
+    top: 0; /* Align it to the top */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays above other elements */
+    transition: background 0.5s ease-in-out; /* Smooth transition for background */
+  }
+  
+  header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background: linear-gradient(90deg, #00123d, #004080);
-    }
-    100% {
-        background: linear-gradient(90deg, #004080, #00123d);
-    }
-}
-
-header {
-    background: linear-gradient(90deg, #00123d, #004080);
-    color: #fff;
-    padding: 15px 0;
-}
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-header .logo {
+  }
+  
+  .logo {
     font-size: 24px;
     font-weight: bold;
-}
-
-header .nav-items {
+  }
+  
+  .nav-items {
     list-style: none;
     display: flex;
-}
-
-header .nav-items li {
-    margin: 0 15px;
-}
-
-header .nav-items li a {
+  }
+  
+  .nav-items li {
+    margin-left: 20px;
+  }
+  
+  .nav-items a {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s;
-}
-
-header .nav-items li a:hover,
-header .nav-items li a.active {
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-items a:hover,
+  .nav-items a.active {
     color: #7eaee6;
-}
-
-/* Obsah stránky */
-main {
-    padding: 20px 0;
-}
-
-.intro h1 {
+  }
+  
+  /* Hero image section */
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    overflow: hidden;
+    margin-top: 0; /* Remove any margin at the top */
+  }
+  
+  .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the whole screen with the image */
+    object-position: center;
+    display: block; /* Remove any unwanted space below the image */
+  }
+  
+  /* Main content */
+  main {
+    padding: 40px 0;
+  }
+  
+  /* Intro section */
+  .intro {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  
+  .intro h1 {
     font-size: 32px;
     color: #264380;
-    margin-bottom: 15px;
-    text-align: center;
-    margin-right: 200px;
-    margin-left: 200px;
-}
-
-.intro p {
+    margin-bottom: 20px;
+  }
+  
+  .intro p {
     font-size: 18px;
     color: #555;
-    text-align: center;
-    margin-bottom: 50px;
-    margin-right: 200px;
-    margin-left: 200px;
-}
-
-.image5 img{
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    height: 190px;
-    width: 230px; 
-    max-width: 230px; 
-    float: left;
-    margin-left: 500px;
-    margin-top: -15px;
-}
-
-.info h2 {
-    font-size: 24px;
-    color: #264380;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.info ul {
-    list-style: disc;
-    margin-left: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  /* Two-column layout */
+  .two-column {
+    display: block; /* Change to block layout */
+    gap: 40px;
+    padding: 40px 0;
+    text-align: left;
+  }
+  
+  .two-column .text {
     margin-bottom: 20px;
-}
-
-.info ul li {
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-.info p {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-/* Flexbox pro layout sekcí pro lepší rozložení */
-.info {
+  }
+  
+  .two-column .image {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: 30px;
-}
-
-
-
-/*spodní patka*/
-footer {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .img-rounded {
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 100%;
+    height: 300px; /* Fixed height for uniform image size */
+    max-width: 500px; /* Limit the maximum width of images */
+    object-fit: cover; /* Ensure images cover the container space */
+    margin-bottom: 20px;
+  }
+  
+  /* Fade-in animation for sections */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Footer styles */
+  footer {
     background: #020c24;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
+    margin-top: 40px;
     font-size: 14px;
-    margin-top: 30px;
-}
-.CoJeAdhdText {
-  margin-left: 0px;
-  margin-right: 400px;
-  margin-top: 20px;
-}
-.CoJeAdhdNadpis {
-    margin-right: 0px;
-    margin-left: 0%;
-    margin-top: 250px;
-}
-
-.HlavniTypyNadpis {
-    margin-top: 100px;
-}
-.Image3 {
-    margin-left: 890px;
-    max-width: 280px;
-    max-height: 250px;
-    margin-top: -160px;
-    border-radius: 40px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 50px;
-}
-.HlavniTypyText {
-    max-width: 700px;
-    margin-top: 20px;
-}
-.Image6 {
-    max-width: 300px; 
-    margin-right: 0px;
-    margin-left: 870px;
-    margin-top: -150px;
-    border-radius: 40px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 25px;
-}
-.DulezitePorozumetNadpis {
-    margin-left: 0px;
-    margin-top: 50px;
-}
-.DulezitePorozumetText {
-    margin-left: 0px;
-    margin-right: 400px;
-    margin-top: 25px;
-}
-.Image8 {
-    margin-left: 885px;
-    max-width: 300px; 
-    border-radius: 40px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-top: -120px;
-}
-
-/* Dole spodek Info (Footer) je to jen pod 500 dělalo to bordel  */
-
-@media (max-width: 500px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-items {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background: #264380;
-        padding: 10px 0;
-    }
-}
-/* Výchozí stav pro celý obsah */
-.fade-in-wrapper {
-    opacity: 0; /* Na začátku je obsah neviditelný */
-    transform: translateY(50px); /* Posuneme obsah dolů */
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Definujeme animaci */
-}  
-  
-  /* Třída, která se přidá při scrollování, aby byl obsah viditelný */
-  .fade-in-wrapper.visible {
-    opacity: 10;
-    transform: translateY(10px); /* Obsah se vrátí na původní pozici */
   }
   
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .two-column {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nav-items {
+      flex-direction: column;
+      background: #264380;
+      width: 100%;
+      padding: 10px 0;
+      gap: 10px;
+    }
+  
+    .nav-items li {
+      margin: 0;
+    }
+  }
+  .text {
+    margin-left: 400px;
+    font-size: larger;
+  }
+  .image { 
+    margin-left: 800px;
+    margin-bottom: -150px;
+  }

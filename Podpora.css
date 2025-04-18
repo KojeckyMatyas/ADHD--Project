@@ -134,13 +134,6 @@ footer {
     opacity: 10;
     transform: translateY(10px); /* Obsah se vrátí na původní pozici */
   }
-  header {
-    transition: all 0.3s ease-in-out;
-}
-
-header:hover {
-    transform: scale(1.05);
-}
 
 
 
